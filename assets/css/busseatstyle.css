@@ -1,0 +1,110 @@
+    body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            background-image: url(../images/ashesi.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    .card-header {
+        width: 80%;
+        padding: 30px;
+        margin-bottom: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    .seat-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) 1fr repeat(2, 1fr); /* Four columns with a gap */
+        gap: 10px; /* Gap between rows */
+        width: 80%; /* Adjust width as needed */
+        margin: 20px 0;
+    }
+
+    .seat {
+        border: 1px solid #ddd;
+        padding: 15px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #f0f0f0;
+        transition: background-color 0.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .seat:hover {
+        background-color: #e0e0e0;
+    }
+
+    .seat-booked {
+        background-color: #d3d3d3;
+        cursor: not-allowed;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #e0e0e0;
+    }
+
+
+    .more-info {
+        width: 80%;
+        padding: 20px;
+        margin: 20px 0;
+        background-color: rgb(238, 214, 236);
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .info-text {
+        flex: 1;
+        padding-left: 20px;
+    }
+
+    .info-text p {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    .info-text p strong {
+        font-weight: bold;
+    }
+
+    .amount-paid {
+        color: red;
+        font-weight: bold;
+    }
+
+    .total-section {
+        width: 80%;
+        padding: 15px;
+        margin-top: 10px;
+        background-color: #d32f2f;
+        color: white;
+        border-radius: 8px;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .total-section:hover {
+        background-color: #b71c1c;
+    }
+
+    .seat-booked {
+        background-color: #978989; /* Gray out color */
+        color: #ffffff;
+        cursor: not-allowed;
+    }
+    

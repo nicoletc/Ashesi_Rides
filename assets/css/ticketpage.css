@@ -1,0 +1,208 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-image: url(../images/ashesiagain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page-header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.page-header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 20px;
+    align-items: center;
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #8f93f0;
+  }
+
+.tickets-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px; /* Add padding at the top */
+}
+
+.ticket-box {
+    background: #fff;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ticket-header h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.status-completed {
+    font-size: 1em;
+    font-weight: 500;
+    color: green;
+}
+
+.ticket-details {
+    margin-bottom: 20px;
+}
+
+.ticket-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.ticket-label {
+    font-weight: 500;
+    color: #555;
+}
+
+.ticket-value {
+    font-weight: 700;
+    color: #333;
+}
+
+.pickup-dropoff {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.pickup, .dropoff {
+    margin-bottom: 10px;
+}
+
+.pickup strong, .dropoff strong {
+    display: block;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.pickup p, .dropoff p {
+    font-weight: 400;
+    color: #555;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.tickets-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px; /* Add padding at the top */
+}
+
+.ticket-box {
+    background: #fff;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ticket-header h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.status-completed {
+    font-size: 1em;
+    font-weight: 500;
+    color: green;
+}
+
+.ticket-details {
+    margin-bottom: 20px;
+}
+
+.ticket-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.ticket-label {
+    font-weight: 500;
+    color: #555;
+}
+
+.ticket-value {
+    font-weight: 700;
+    color: #333;
+}
+
+.pickup-dropoff {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.pickup, .dropoff {
+    margin-bottom: 10px;
+}
+
+.pickup strong, .dropoff strong {
+    display: block;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.pickup p, .dropoff p {
+    font-weight: 400;
+    color: #555;
+    margin: 0;
+}

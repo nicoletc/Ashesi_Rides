@@ -1,0 +1,134 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+.review-management-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: rgb(226, 192, 227);
+  color: rgb(22, 21, 21);
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: rgb(24, 23, 23);
+  font-size: 16px;
+}
+
+.sidebar ul li a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+.sidebar button {
+  background-color: #795d71;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #f0c5eb;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Review Table */
+.review-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+
+.review-table th,
+.review-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.review-table th {
+  background-color: #eaeaea;
+  color: #333;
+  font-size: 14px;
+}
+
+.review-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.review-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Action Buttons */
+.review-table .btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  background-color: #df8bda;
+  transition: background-color 0.3s ease;
+}
+
+.review-table .btn:hover {
+  background-color: #ddadcd;
+}
+
+.review-table .btn.delete {
+  background-color: #795d71;
+}
+
+.review-table .btn.delete:hover {
+  background-color: #f0c5eb;
+}

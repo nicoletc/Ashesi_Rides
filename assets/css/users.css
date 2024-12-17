@@ -1,0 +1,234 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+  }
+  
+  .user-management-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 200px;
+    background-color: rgb(226, 192, 227);
+    color: rgb(22, 21, 21);
+    padding: 20px;
+  }
+  
+  .btn {
+    background-color: #795d71; 
+    color: white; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 10px 10px; 
+    cursor: pointer; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+  }
+
+  button{
+    background-color: #795d71; 
+    color: white; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 10px 10px; 
+    cursor: pointer; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+  }
+
+  .btn:hover{
+      background-color: #f0c5eb;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: rgb(24, 23, 23);
+    font-size: 16px;
+  }
+  
+  .sidebar ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .sidebar ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styles */
+  .user-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .user-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .user-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .user-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .user-form .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(226, 192, 227);
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .user-form .btn:hover {
+    background-color: #debfdf;
+  }
+  
+  /* User Table */
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .user-table th, .user-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .user-table th {
+    background-color: #eaeaea;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .user-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .user-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .user-table .btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .user-table .btn.view {
+    background-color: #df8bda;
+    color: black;
+  }
+  
+  .user-table .btn.edit {
+    background-color: #df8bda;
+    color: black;
+  }
+  
+  .user-table .btn.delete {
+    background-color: #df8bda;
+    color:black;
+  }
+  
+  .user-table .btn.view:hover {
+    background-color: #ddadcd;
+  }
+  
+  .user-table .btn.edit:hover {
+    background-color: #ddadcd;
+  }
+  
+  .user-table .btn.delete:hover {
+    background-color: #ddadcd;
+  }
+
+  /* Modal Styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(234, 218, 231);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 400px;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.modal-content p {
+  margin: 10px 0;
+}
+
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+  

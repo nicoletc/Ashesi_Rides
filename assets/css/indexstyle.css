@@ -1,0 +1,160 @@
+/* Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+  
+  header .top {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  header nav .top {
+    align-items: right;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+
+  }
+   
+  header nav .btn-signup {
+    padding: 8px 16px;
+    background-color: #d18ae3;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  
+  header nav .btn-signup:hover {
+    background-color: #28a85c;
+  }
+
+  header nav .btn-login {
+    padding: 8px 16px;
+    background-color: #d18ae3;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+  
+  header nav .btn-login:hover {
+    background-color: #28a85c;
+  }
+  
+  
+  .menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+/* Main Section */
+.main {
+  background: url('../images/indexbackground.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 0 20px;
+  overflow: hidden; 
+}
+
+.main-content {
+  max-width: 500px;
+  opacity: 0; 
+  transform: translateX(-100%); 
+  animation: slideIn 1.5s ease-out forwards; 
+}
+
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
+.main h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.main p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #f6f4f6;
+}
+
+.button {
+  padding: 15px 30px;
+  background-color: #d18ae3;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #28a85c;
+}
+
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    header nav a {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .main h1 {
+      font-size: 2.5rem;
+    }
+  
+    .main p {
+      font-size: 1rem;
+    }
+  }
+  
